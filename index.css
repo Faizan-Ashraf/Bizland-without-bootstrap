@@ -1,0 +1,295 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all;
+    transition-duration: 0.55s;
+    transition-timing-function: ease-in-out;
+}
+
+nav {
+
+
+    background-color: white;
+    height: 10vh;
+    margin: 0;
+    display: flex;
+
+
+}
+
+#navbar-brand {
+    margin: auto 0px auto 5px;
+}
+
+.nav-item {
+    display: inline;
+    margin: 0px 10px 0px 10px;
+}
+
+.expand-link,
+.nav-link {
+    text-decoration: none;
+    font-weight: bold;
+    color: gray;
+}
+
+.expand-link:hover,
+.nav-link:hover {
+    color: #0D6EFD;
+}
+
+.navbar-nav {
+    margin: auto 0px auto auto;
+    padding: 0px;
+}
+
+
+
+
+.expand-item {
+
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.expand {
+    background-color: white;
+    height: 100vh;
+    width: 30vh;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    right: 0px;
+    display: none;
+    border-left: 2px solid lightgray;
+}
+
+h2 {
+    color: black;
+    margin-bottom: 15px;
+}
+
+#switch {
+    display: none;
+}
+
+#toggler-icon {
+    margin: auto 5px auto auto;
+    display: none;
+    cursor: pointer;
+    z-index: 100;
+
+}
+
+@media (max-width: 992px) {
+
+    .nav-item {
+        display: none;
+    }
+
+    input[type="checkbox"]:checked~.expand,
+    #toggler-icon {
+        display: block;
+
+    }
+}
+
+
+
+#hl {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid tomato;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out 0.2s;
+}
+
+#hl:hover {
+    background-image: linear-gradient(to top right, red, tomato);
+    color: white;
+}
+
+#hl:active {
+    background-image: linear-gradient(to top left, red, tomato);
+    color: white;
+}
+
+
+
+#hero-section {
+    height: 80vh;
+
+    background: grey url(images/hero-bg.jpg);
+    background-blend-mode: screen;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+#hero-section>div {
+    color: grey;
+}
+
+#hero-section>div,
+h1,
+button {
+
+    margin: 5px 10%;
+}
+
+#hero-section>button {
+    color: white;
+    background-color: #0D6EFD;
+    border: none;
+    padding: 12px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#hero-section>button:hover {
+
+    background-color: #1b5bba;
+
+}
+
+
+.director {
+    height: 10vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.director>a {
+    color: #0D6EFD;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: #d9e4f4;
+}
+
+#about-heading,#team-heading {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#about-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width:1400px) {
+    #about-body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+
+    } 
+    #about-img {
+        width: 40vw;
+        height: 80vh;
+    }
+    #about-text{
+        width: 40vw;
+        height: 80vh;
+    }
+}
+
+@media (max-width:992px) {
+    #about-body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    } 
+    #about-img {
+        width: 80vw;
+        height: 40vh;
+
+    }
+    #about-text {
+        width: 80vw;
+        height: 40vh;
+
+    }
+}
+#about-img {
+   
+    background: url(images/about.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+#about-text {
+    
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#about-text>h1,
+i {
+    margin: 10px 0px;
+}
+
+
+#team {
+    min-height: 80vh;
+    background-color: rgb(245, 245, 245);
+}
+
+#team-body{
+    display: flex;
+    justify-content: space-around;
+  
+    flex-wrap: wrap;
+}
+.person {
+    width: 20%;
+    min-width: 250px;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 3px;
+    background-color: white;
+}
+.person>img{
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    margin-bottom: 20px;
+}
+.person>b{
+    color: grey;
+    margin-bottom: 3px;
+}
+.person>span{
+    color: rgb(186, 186, 186);
+    font-size: small;
+}
+
+
+#footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
